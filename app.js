@@ -1,7 +1,9 @@
-//we need to init here so it wont refresh everytime we click submit and delete info
-const storage = new Stack;
 
 document.addEventListener("DOMContentLoaded", function(event) { 
+    //we need to init here so it wont refresh everytime we click submit and delete info
+    const storage = new Stack;
+    //init publish class
+    const publish = new Publish;
     //when click on submit button bring data
     submit_book = document.getElementById('submit_book')
     submit_book.addEventListener('click', (e) =>{
@@ -11,9 +13,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let book_object = book_info.getbook();
         
         if(book_object !== "Not complete"){
-            //init storage class
-            storage.push(book_object)
-            
+            //current element in the storage without refresh
+            let currentStorage = storage.push(book_object)
+            console.log(currentStorage)
+            //show current element in the storage
+            publish.showBook(currentStorage)
+            //reset form 
+            document.getElementById("form").reset();
         }
     })
 

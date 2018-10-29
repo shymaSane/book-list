@@ -48,5 +48,9 @@ label {
 
 table {
     width: 100%;
+    border-bottom : 1px solid black
 }
 
+td{
+    text-align: start
+}
