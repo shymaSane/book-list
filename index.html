@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Books</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="book.js"></script>
+    <script src="publish.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <main id="main">
+        <div class="input_book" id="input_book">
+            <h1 id="title">Book List</h1>
+            <form>
+                <div>
+                    <label for="book title">Book Title:</label>
+                    <input type="text" name="title" id="book_title" placeholder="Book Name" required>
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author_name" placeholder="Author" required>
+                </div>
+                <div>
+                    <label for="ISBN">ISBN:</label>
+                    <input type="number" name="number" id="isbn_number" placeholder="Isbn Number" required>
+                </div>
+                <input type="submit" value="Submit" id="submit_book">
+            </form>
+        </div>
+        <div id="book_storage">
+            <table id="saved_books">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Isbn</th>
+                </tr>
+                <tr id="add-book">
+                    <td><!-- book --></td>
+                    <td><!-- author --></td>
+                    <td><!-- number --></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
+
+

@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#input_book{
+    width: 500px;
+}
+
+#title {
+    margin: 10px 0;
+    text-align: center;
+    border-bottom: 1px dashed grey;
+}
+
+label {
+    display: block;
+    width: 100%
+}
+
+#book_title, #author_name, #isbn_number {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 5px;
+}
+
+#submit_book{
+    margin: 10px 0px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#book_storage{
+    margin: 10px 0px;
+    border-top: 1px dashed grey;
+    width: 500px;
+}
+
+table {
+    width: 100%;
+}
+
