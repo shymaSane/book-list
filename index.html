@@ -12,24 +12,27 @@
 </head>
 <body>
     <main id="main">
+        <!-- input  book -->
         <div class="input_book" id="input_book">
+            <h3 id="notFound"></h3>
             <h1 id="title">Book List</h1>
             <form>
                 <div>
                     <label for="book title">Book Title:</label>
-                    <input type="text" name="title" id="book_title" placeholder="Book Name" required>
+                    <input type="text" name="title" id="book_title" placeholder="Book Name" required ="true">
                 </div>
                 <div>
                     <label for="author">Author:</label>
-                    <input type="text" name="author" id="author_name" placeholder="Author" required>
+                    <input type="text" name="author" id="author_name" placeholder="Author" required ="true">
                 </div>
                 <div>
                     <label for="ISBN">ISBN:</label>
-                    <input type="number" name="number" id="isbn_number" placeholder="Isbn Number" required>
+                    <input type="number" name="number" id="isbn_number" placeholder="Isbn Number" required ="true">
                 </div>
                 <input type="submit" value="Submit" id="submit_book">
             </form>
         </div>
+        <!-- insert book data -->
         <div id="book_storage">
             <table id="saved_books">
                 <tr>
