@@ -45,12 +45,14 @@ label {
     border-top: 1px dashed grey;
     width: 500px;
 }
-
+/* tables */
 table {
     width: 100%;
-    border-bottom : 1px solid black
+    border-bottom : 1px solid black;
 }
 
-td{
-    text-align: start
+#close:hover{
+    cursor: pointer;
+    transform: scale(1.1)
 }
+

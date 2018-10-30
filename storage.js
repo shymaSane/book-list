@@ -1,21 +1,21 @@
 var Stack = function (){
-    this.storage ={}
-    this.counter = 0
+    this.storage = [];
 }
+
+
 
 
 Stack.prototype.push = function(val){
-    this.storage[this.counter++] = val
+    this.storage.push(val)
+    localStorage.setItem('items', JSON.stringify(this.storage))
     return this.storage
 }
 
-Stack.prototype.pop = function() {
-    var val = this.storage[this.counter];
-    delete this.storage[this.counter];
-    this.counter--;
-    return val
+Stack.prototype.get = function() {
+    let data = JSON.parse(localStorage.getItem('items'))
+    return data
 }
 
-Stack.prototype.size = function(){
-    return counter
-}
+// Stack.prototype.size = function(){
+//     return counter
+// }

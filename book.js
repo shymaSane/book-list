@@ -13,7 +13,6 @@ Book.prototype.getbook = function(){
             isbn: this.isbn_number.value
         }
     } else {
-        
         this.book_title.reportValidity();
         this.isbn_number.reportValidity();
         this.author_name.reportValidity();

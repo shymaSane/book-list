@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const storage = new Stack;
     //init publish class
     const publish = new Publish;
+    let currentStorage = storage.get()
+    console.log(currentStorage)
     //when click on submit button bring data
     submit_book = document.getElementById('submit_book')
     submit_book.addEventListener('click', (e) =>{
@@ -14,13 +16,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
         if(book_object !== "Not complete"){
             //current element in the storage without refresh
-            let currentStorage = storage.push(book_object)
-            console.log(currentStorage)
+            storage.push(book_object)
+            let currentStorage = storage.get()
+         
             //show current element in the storage
             publish.showBook(currentStorage)
             //reset form 
             document.getElementById("form").reset();
         }
     })
+
+    //Delete button works when we have saved information
+    // let close = document.getElementById('close');
+    // close.addEventListener('click', () => {
+    //     storage.pop()
+    // })
 
  });

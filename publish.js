@@ -13,7 +13,8 @@ Publish.prototype.showBook = function(data){
                         <td>${data[key].book}</td>
                         <td>${data[key].author}</td>
                         <td>${data[key].isbn}</td>
-                    </tr> <span>&#10006;</span>
+                        <td><span id="close">&#10006;</span></td>
+                    </tr>
                     
                     `
     }
