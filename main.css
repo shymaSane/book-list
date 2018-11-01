@@ -39,20 +39,13 @@ label {
     padding: 5px 15px;
     border-radius: 5px;
 }
-
 #book_storage{
-    margin: 10px 0px;
-    border-top: 1px dashed grey;
     width: 500px;
 }
-/* tables */
-table {
-    width: 100%;
-    border-bottom : 1px solid black;
+table{
+    width: 100%
 }
 
-#close:hover{
-    cursor: pointer;
-    transform: scale(1.1)
+th{
+    text-align: start
 }
-
